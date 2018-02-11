@@ -5,9 +5,9 @@
 ### [Step 3: Feature Engineering](#step3)
 ### [Step 4: Modeling](#step4)
 ### [Step 5: Ensemble](#step5)
-### [Others](#others)
-### [Experiences](#experiences)
-### [Resources](#resources)
+### [Others](#step6)
+### [Experiences](#step7)
+### [Resources](#step8)
 
 
 <a id='step1'></a>
@@ -193,6 +193,7 @@ CV分数很可能和LB分数不一致，如何选择Case By Case
 # Step 5: Ensemble
 Feature决定了模型效果的上限，而Ensemble就是让你更接近这个上限。
 将多个不同的Base Model组合成一个Ensemble Model。可以同时降低最终模型的Bias和Variance，从而在提高分数的同时又降低Overfitting的风险。
+
 Kaggle: 不用Ensemble几乎不可能得奖
 ## Methods：
 _Averaging_: 对每个Base Model生成的结果取（加权）平均。
@@ -213,7 +214,7 @@ _Voting_: 对每个Base Model生成的结果进行投票，并选择最高票数
   - 为了避免Label Leak，需要对每个学习器使用k-Fold，将k个模型对valid set的预测结果拼起来，作为下一层学习器的输入。
   <div align=center><img src=resources/0260129CB69522536EC2FB5A9FE47BFD.jpg></div>
   - feature复用
-  
+
 ## Notes:
 - __Base Model 之间的相关性要尽可能的小__。Ensemble 的 Diversity 越大，最终 Model 的 Bias 就越低。
 - __Base Model 之间的性能表现不能差距太大__。
@@ -224,7 +225,7 @@ _Voting_: 对每个Base Model生成的结果进行投票，并选择最高票数
 
 [Basics of Ensemble Learning Explained in Simple English](https://www.analyticsvidhya.com/blog/2015/08/introduction-ensemble-learning/)
 
-<a id='others'></a>
+<a id='step6'></a>
 # Others
 ## Other Algorithms
 - Naive Bayes
@@ -247,7 +248,7 @@ label类别不均衡问题。
 
 [8 Tactics to Combat Imbalanced Classes in Your Machine Learning Dataset](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
-<a id='experiences'></a>
+<a id='step7'></a>
 # Experiences
 - 自动化
 - 封装性
@@ -261,7 +262,7 @@ label类别不均衡问题。
   - 泛化性能衡量
   - 规则、先验知识
 
-<a id='resources'></a>
+<a id='step8'></a>
 # Resources
 
 ## Books
