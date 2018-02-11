@@ -1,4 +1,4 @@
----
+
 # Overview
 ##[Step 1: EDA(Exploratory Data Analysis)](#step1)
 
@@ -14,21 +14,24 @@
 
 ##[Experiences](#experiences)
 
-##[Materials](#materials)
+##[Resources](#resources)
 
----
+
 <a id='step1'></a>
 # Step 1: EDA(Exploratory Data Analysis)
 https://www.kaggle.com/sudalairajkumar/simple-exploration-notebook-2-connect
+
 https://www.kaggle.com/poonaml/two-sigma-renthop-eda
+
 https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
+
 [A Complete Tutorial which teaches Data Exploration in detail](https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/)
 
 ## 1. Statistic Analysis
 - min/max/mean/meduim/std
-- ![IMAGE](resources/0CD70CE75FE7F4118B00E674CC803ED1.jpg =900x)
+- ![IMAGE](resources/0CD70CE75FE7F4118B00E674CC803ED1.jpg)
 - Correlation Coefficient（相关系数）矩阵
-- ![IMAGE](resources/13EEC95A5C65CCC353E2CD326E84FA18.jpg =900x)
+- ![IMAGE](resources/13EEC95A5C65CCC353E2CD326E84FA18.jpg)
 - class(positive/negative)
 - 通过一些统计上的测试来验证一些假设的显著性。(数据是否符合i.i.d.(独立同分布))
 
@@ -38,19 +41,18 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
   - feature/label分布是否均衡
   - train/test分布是否一致
   - 数据是否符合i.i.d.
-  - ![IMAGE](resources/0F4030639E6BD266BF3B355B65D870D0.jpg =900x)
-  - ![IMAGE](resources/01102297C761364F1276CDB64CBC996B.jpg =900x)
+  - ![IMAGE](resources/0F4030639E6BD266BF3B355B65D870D0.jpg)
+  - ![IMAGE](resources/01102297C761364F1276CDB64CBC996B.jpg)
 - 箱形图(Box Plot)
   - 可以直观查看数值变量的分布
-  - ![IMAGE](resources/8BAD2A2B00EED0B27064E3ADCD605D41.jpg =900x)
+  - ![IMAGE](resources/8BAD2A2B00EED0B27064E3ADCD605D41.jpg)
 - 琴形图(Violin Plot)
   - 表征了在一个或多个分类变量情况下连续变量数据的分布，并进行了比较，是一种观察多个数据分布有效方法
-  - ![IMAGE](resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg =900x)
+  - ![IMAGE](resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg)
 - Correlation Coefficient图，表征变量之间两两分布和相关度
-  - ![IMAGE](resources/945CAF8F9144C480568DFCD5740C6953.jpg =900x)
+  - ![IMAGE](resources/945CAF8F9144C480568DFCD5740C6953.jpg)
 - 常用工具：matplotlib/seaborn
 
----
 <a id='step2'></a>
 # Step 2: Data Preprocessing
 
@@ -91,7 +93,6 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
 
 [Building Powerful Image Classification Models Using Very Little Data](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
----
 <a id='step3'></a>
 # Step 3: Feature Engineering
 特征没做好，调参调到老
@@ -125,7 +126,6 @@ High Categorical(高势集类别)，如邮编。
 - 非线性方法：__t-SNE聚类__、Sammon映射、Isomap、LLE、CCA、SNE、MVU等
 - 深度学习降维，如embedding、bottleneck feature、autoencoders、denoising autoencoder
 
----
 <a id='step4'></a>
 # Step 4: Modeling
 
@@ -136,7 +136,7 @@ High Categorical(高势集类别)，如邮编。
   - Logistic Regression
   - KNN(K-Nearest Neighbor)
   - Decision Tree
-  - [A Complete Tutorial on Tree Based Modeling from Scratch](https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/)
+    - [A Complete Tutorial on Tree Based Modeling from Scratch](https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/)
   - Extra Tree
   - SVM(SVC/SVR)
     - [Understanding Support Vector Machine algorithm from examples (along with code)](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
@@ -193,9 +193,9 @@ CV分数很可能和LB分数不一致，如何选择Case By Case
   4) 验证模型的泛化能力
 
 [Complete Guide to Parameter Tuning in Gradient Boosting (GBM)](https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/)
+
 [Complete Guide to Parameter Tuning in XGBoost](https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/)
 
----
 <a id='step5'></a>
 # Step 5: Ensemble
 Feature决定了模型效果的上限，而Ensemble就是让你更接近这个上限。
@@ -215,9 +215,9 @@ Kaggle: 不用Ensemble几乎不可能得奖
     - 实现简单，但对训练数据利用少了。
   - __Stacking__：用新的Stack Model学习怎么组合那些Base Model。
     - 多个Base Model的非线性组合。
-    ![IMAGE](resources/8E7F50CA710F1453C823613F6A5405AD.jpg =900x)
+    ![IMAGE](resources/8E7F50CA710F1453C823613F6A5405AD.jpg)
     - 为了避免Label Leak，需要对每个学习器使用k-Fold，将k个模型对valid set的预测结果拼起来，作为下一层学习器的输入。
-    ![IMAGE](resources/0260129CB69522536EC2FB5A9FE47BFD.jpg =900x)
+    ![IMAGE](resources/0260129CB69522536EC2FB5A9FE47BFD.jpg)
     - feature复用
 - Notes:
   - __Base Model 之间的相关性要尽可能的小__。Ensemble 的 Diversity 越大，最终 Model 的 Bias 就越低。
@@ -226,9 +226,9 @@ Kaggle: 不用Ensemble几乎不可能得奖
     - [Trade-Off Between Diversity and Accuracy in Ensemble Generation](https://link.springer.com/chapter/10.1007%2F3-540-33019-4_19)
 
 [Kaggle Ensembling Guide](https://mlwave.com/kaggle-ensembling-guide/)
+
 [Basics of Ensemble Learning Explained in Simple English](https://www.analyticsvidhya.com/blog/2015/08/introduction-ensemble-learning/)
 
----
 <a id='others'></a>
 # Others
 ## Other Algorithms
@@ -249,9 +249,9 @@ label类别不均衡问题。
 - 移动阈值
 
 [How to handle Imbalanced Classification Problems in machine learning](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/)
+
 [8 Tactics to Combat Imbalanced Classes in Your Machine Learning Dataset](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
----
 <a id='experiences'></a>
 # Experiences
 - 自动化
@@ -266,9 +266,8 @@ label类别不均衡问题。
   - 泛化性能衡量
   - 规则、先验知识
 
----
-<a id='materials'></a>
-# Materials
+<a id='resources'></a>
+# Resources
 
 ## Books
 - PRML(Pattern Recognition and Machine Learning)
