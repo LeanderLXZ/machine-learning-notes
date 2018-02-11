@@ -1,13 +1,21 @@
 ---
 # Overview
 ##[Step 1: EDA(Exploratory Data Analysis)](#step1)
+
 ##[Step 2: Data Preprocessing](#step2)
+
 ##[Step 3: Feature Engineering](#step3)
+
 ##[Step 4: Modeling](#step4)
+
 ##[Step 5: Ensemble](#step5)
+
 ##[Others](#others)
+
 ##[Experiences](#experiences)
+
 ##[Materials](#materials)
+
 ---
 <a id='step1'></a>
 # Step 1: EDA(Exploratory Data Analysis)
