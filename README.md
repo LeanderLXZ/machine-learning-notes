@@ -41,9 +41,9 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
   <div align=center><img src=resources/8BAD2A2B00EED0B27064E3ADCD605D41.jpg></div>
 - 琴形图(Violin Plot)
   - 表征了在一个或多个分类变量情况下连续变量数据的分布，并进行了比较，是一种观察多个数据分布有效方法
-  <div align=center><img width=800 src=resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg></div>
+  <div align=center><img width=700 src=resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg></div>
 - Correlation Coefficient图，表征变量之间两两分布和相关度 
-  <div align=center><img width=800 src=resources/945CAF8F9144C480568DFCD5740C6953.jpg></div>
+  <div align=center><img width=700 src=resources/945CAF8F9144C480568DFCD5740C6953.jpg></div>
 - 常用工具：matplotlib/seaborn
 
 <a id='step2'></a>
