@@ -22,9 +22,9 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
 
 ## 1. Statistic Analysis
 - min/max/mean/meduim/std
-<div style="align: center"> <img src=resources/0CD70CE75FE7F4118B00E674CC803ED1.jpg> </div>
+<img src=resources/0CD70CE75FE7F4118B00E674CC803ED1.jpg align=center/>
 - Correlation Coefficient（相关系数）矩阵
-<div style="align: center"> <img src=resources/13EEC95A5C65CCC353E2CD326E84FA18.jpg> </div>
+<img src=resources/13EEC95A5C65CCC353E2CD326E84FA18.jpg> align=center/>
 - class(positive/negative)
 - 通过一些统计上的测试来验证一些假设的显著性。(数据是否符合i.i.d.(独立同分布))
 
@@ -34,16 +34,16 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
   - feature/label分布是否均衡
   - train/test分布是否一致
   - 数据是否符合i.i.d.
-  <div style="align: center"> <img src=resources/0F4030639E6BD266BF3B355B65D870D0.jpg> </div>
-  <div style="align: center"> <img src=resources/01102297C761364F1276CDB64CBC996B.jpg> </div>
+  <img src=resources/0F4030639E6BD266BF3B355B65D870D0.jpg align=center/>
+  <img src=resources/01102297C761364F1276CDB64CBC996B.jpg align=center/>
 - 箱形图(Box Plot)
   - 可以直观查看数值变量的分布
-  <div style="align: center"> <img src=resources/8BAD2A2B00EED0B27064E3ADCD605D41.jpg> </div>
+  <img src=resources/8BAD2A2B00EED0B27064E3ADCD605D41.jpg align=center/>
 - 琴形图(Violin Plot)
   - 表征了在一个或多个分类变量情况下连续变量数据的分布，并进行了比较，是一种观察多个数据分布有效方法
-  <div style="align: center"> <img src=resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg> </div>
+  <img src=resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg align=center/>
 - Correlation Coefficient图，表征变量之间两两分布和相关度 
-  <div style="align: center"> <img src=resources/945CAF8F9144C480568DFCD5740C6953.jpg> </div>
+  <img src=resources/945CAF8F9144C480568DFCD5740C6953.jpg align=center/>
 - 常用工具：matplotlib/seaborn
 
 <a id='step2'></a>
@@ -208,9 +208,9 @@ Kaggle: 不用Ensemble几乎不可能得奖
     - 实现简单，但对训练数据利用少了。
   - __Stacking__：用新的Stack Model学习怎么组合那些Base Model。
     - 多个Base Model的非线性组合。
-    <div style="align: center"> <img src=resources/8E7F50CA710F1453C823613F6A5405AD.jpg> </div>
+    <img src=resources/8E7F50CA710F1453C823613F6A5405AD.jpg align=center/>
     - 为了避免Label Leak，需要对每个学习器使用k-Fold，将k个模型对valid set的预测结果拼起来，作为下一层学习器的输入。
-    <div style="align: center"> <img src=resources/0260129CB69522536EC2FB5A9FE47BFD.jpg> </div>
+    <img src=resources/0260129CB69522536EC2FB5A9FE47BFD.jpg align=center/>
     - feature复用
 - Notes:
   - __Base Model 之间的相关性要尽可能的小__。Ensemble 的 Diversity 越大，最终 Model 的 Bias 就越低。
