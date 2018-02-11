@@ -1,7 +1,4 @@
-***
-关于机器学习方法的一些笔记和介绍。
-
-***
+---
 # Overview
 ##[Step 1: EDA(Exploratory Data Analysis)](#step1)
 ##[Step 2: Data Preprocessing](#step2)
@@ -11,7 +8,7 @@
 ##[Others](#others)
 ##[Experiences](#experiences)
 ##[Materials](#materials)
-***
+---
 <a id='step1'></a>
 # Step 1: EDA(Exploratory Data Analysis)
 https://www.kaggle.com/sudalairajkumar/simple-exploration-notebook-2-connect
@@ -45,7 +42,7 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
   - ![IMAGE](resources/945CAF8F9144C480568DFCD5740C6953.jpg =900x)
 - 常用工具：matplotlib/seaborn
 
-***
+---
 <a id='step2'></a>
 # Step 2: Data Preprocessing
 
@@ -86,7 +83,7 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
 
 [Building Powerful Image Classification Models Using Very Little Data](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
 
-***
+---
 <a id='step3'></a>
 # Step 3: Feature Engineering
 特征没做好，调参调到老
@@ -120,7 +117,7 @@ High Categorical(高势集类别)，如邮编。
 - 非线性方法：__t-SNE聚类__、Sammon映射、Isomap、LLE、CCA、SNE、MVU等
 - 深度学习降维，如embedding、bottleneck feature、autoencoders、denoising autoencoder
 
-***
+---
 <a id='step4'></a>
 # Step 4: Modeling
 
@@ -190,7 +187,7 @@ CV分数很可能和LB分数不一致，如何选择Case By Case
 [Complete Guide to Parameter Tuning in Gradient Boosting (GBM)](https://www.analyticsvidhya.com/blog/2016/02/complete-guide-parameter-tuning-gradient-boosting-gbm-python/)
 [Complete Guide to Parameter Tuning in XGBoost](https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/)
 
-***
+---
 <a id='step5'></a>
 # Step 5: Ensemble
 Feature决定了模型效果的上限，而Ensemble就是让你更接近这个上限。
@@ -223,7 +220,7 @@ Kaggle: 不用Ensemble几乎不可能得奖
 [Kaggle Ensembling Guide](https://mlwave.com/kaggle-ensembling-guide/)
 [Basics of Ensemble Learning Explained in Simple English](https://www.analyticsvidhya.com/blog/2015/08/introduction-ensemble-learning/)
 
-***
+---
 <a id='others'></a>
 # Others
 ## Other Algorithms
@@ -246,7 +243,7 @@ label类别不均衡问题。
 [How to handle Imbalanced Classification Problems in machine learning](https://www.analyticsvidhya.com/blog/2017/03/imbalanced-classification-problem/)
 [8 Tactics to Combat Imbalanced Classes in Your Machine Learning Dataset](https://machinelearningmastery.com/tactics-to-combat-imbalanced-classes-in-your-machine-learning-dataset/)
 
-***
+---
 <a id='experiences'></a>
 # Experiences
 - 自动化
@@ -261,7 +258,7 @@ label类别不均衡问题。
   - 泛化性能衡量
   - 规则、先验知识
 
-***
+---
 <a id='materials'></a>
 # Materials
 
