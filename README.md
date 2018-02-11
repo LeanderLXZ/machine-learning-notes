@@ -194,29 +194,31 @@ CV分数很可能和LB分数不一致，如何选择Case By Case
 Feature决定了模型效果的上限，而Ensemble就是让你更接近这个上限。
 将多个不同的Base Model组合成一个Ensemble Model。可以同时降低最终模型的Bias和Variance，从而在提高分数的同时又降低Overfitting的风险。
 Kaggle: 不用Ensemble几乎不可能得奖
-- Methods：
-  _Averaging_: 对每个Base Model生成的结果取（加权）平均。
-  _Voting_: 对每个Base Model生成的结果进行投票，并选择最高票数的结果为最终结果。
-  - __Bagging__：使用训练数据的不同随机子集来训练每个Base Model，最后进行每个Base Model权重相同的Average或Vote。
-    - 多个Base Model的线性组合。
-    - 也是Random Forest的原理。
-    - [Quick Guide to Boosting Algorithms in Machine Learning](https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/)
-  - __Boosting__：__“知错能改”__。迭代地训练也是Random Forest的原理，每次根据上一个迭代中预测错误的情况修改训练样本的权重。
-    - 比Bagging效果好，但更容易Overfit。
-    - 也是Gradient Boosting的原理。
-  - __Blending__：用不相交的数据训练不同的Base Model，将它们的输出取（加权）平均。
-    - 实现简单，但对训练数据利用少了。
-  - __Stacking__：用新的Stack Model学习怎么组合那些Base Model。
-    - 多个Base Model的非线性组合。
-    <div align=center><img src=resources/8E7F50CA710F1453C823613F6A5405AD.jpg></div>
-    - 为了避免Label Leak，需要对每个学习器使用k-Fold，将k个模型对valid set的预测结果拼起来，作为下一层学习器的输入。
-    <div align=center><img src=resources/0260129CB69522536EC2FB5A9FE47BFD.jpg></div>
-    - feature复用
-- Notes:
-  - __Base Model 之间的相关性要尽可能的小__。Ensemble 的 Diversity 越大，最终 Model 的 Bias 就越低。
-  - __Base Model 之间的性能表现不能差距太大__。
-  - __Trade-off__
-    - [Trade-Off Between Diversity and Accuracy in Ensemble Generation](https://link.springer.com/chapter/10.1007%2F3-540-33019-4_19)
+## Methods：
+_Averaging_: 对每个Base Model生成的结果取（加权）平均。
+_Voting_: 对每个Base Model生成的结果进行投票，并选择最高票数的结果为最终结果。
+
+- __Bagging__：使用训练数据的不同随机子集来训练每个Base Model，最后进行每个Base Model权重相同的Average或Vote。
+  - 多个Base Model的线性组合。
+  - 也是Random Forest的原理。
+  - [Quick Guide to Boosting Algorithms in Machine Learning](https://www.analyticsvidhya.com/blog/2015/11/quick-introduction-boosting-algorithms-machine-learning/)
+- __Boosting__：__“知错能改”__。迭代地训练也是Random Forest的原理，每次根据上一个迭代中预测错误的情况修改训练样本的权重。
+  - 比Bagging效果好，但更容易Overfit。
+  - 也是Gradient Boosting的原理。
+- __Blending__：用不相交的数据训练不同的Base Model，将它们的输出取（加权）平均。
+  - 实现简单，但对训练数据利用少了。
+- __Stacking__：用新的Stack Model学习怎么组合那些Base Model。
+  - 多个Base Model的非线性组合。
+  <div align=center><img src=resources/8E7F50CA710F1453C823613F6A5405AD.jpg></div>
+  - 为了避免Label Leak，需要对每个学习器使用k-Fold，将k个模型对valid set的预测结果拼起来，作为下一层学习器的输入。
+  <div align=center><img src=resources/0260129CB69522536EC2FB5A9FE47BFD.jpg></div>
+  - feature复用
+  
+## Notes:
+- __Base Model 之间的相关性要尽可能的小__。Ensemble 的 Diversity 越大，最终 Model 的 Bias 就越低。
+- __Base Model 之间的性能表现不能差距太大__。
+- __Trade-off__
+  - [Trade-Off Between Diversity and Accuracy in Ensemble Generation](https://link.springer.com/chapter/10.1007%2F3-540-33019-4_19)
 
 [Kaggle Ensembling Guide](https://mlwave.com/kaggle-ensembling-guide/)
 
