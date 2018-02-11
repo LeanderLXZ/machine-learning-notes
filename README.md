@@ -22,7 +22,7 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
 
 ## 1. Statistic Analysis
 - min/max/mean/meduim/std
-<div align=center><img src=resources/0CD70CE75FE7F4118B00E674CC803ED1.jpg.jpg></div>
+<div align=center><img src=resources/0CD70CE75FE7F4118B00E674CC803ED1.jpg></div>
 - Correlation Coefficient（相关系数）矩阵
 <div align=center><img src=resources/13EEC95A5C65CCC353E2CD326E84FA18.jpg></div>
 - class(positive/negative)
@@ -41,9 +41,9 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
   <div align=center><img src=resources/8BAD2A2B00EED0B27064E3ADCD605D41.jpg></div>
 - 琴形图(Violin Plot)
   - 表征了在一个或多个分类变量情况下连续变量数据的分布，并进行了比较，是一种观察多个数据分布有效方法
-  <div align=center><img src=resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg></div>
+  <div align=center><img width=800 src=resources/BE3C40A3DF25CCE4F9EAB2A19E11465F.jpg></div>
 - Correlation Coefficient图，表征变量之间两两分布和相关度 
-  <div align=center><img src=resources/945CAF8F9144C480568DFCD5740C6953.jpg></div>
+  <div align=center><img width=800 src=resources/945CAF8F9144C480568DFCD5740C6953.jpg></div>
 - 常用工具：matplotlib/seaborn
 
 <a id='step2'></a>
@@ -92,7 +92,7 @@ https://www.kaggle.com/neviadomski/data-exploration-two-sigma-renthop
 Kaggle：Feature 为主，调参和 Ensemble 为辅
 
 ## 1. Feature Extraction
-总体：尽可能多地抽取特征，只要你认为某个特征对解决问题有帮助，它就可以成为一个特征，相信 model能够挑出最有用的feature。
+前期：尽可能多地抽取特征，只要你认为某个特征对解决问题有帮助，它就可以成为一个特征，相信 model能够挑出最有用的feature。
 - 凭经验、对任务的直观判断、思考数据集构造(magic feature)
 - 数值型特征：线性组合、多项式组合来构造新feature
 - 文本特征：文本长度、Word Embeddings、TF-IDF、LDA、LSI等，深度学习提取feature
